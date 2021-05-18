@@ -6,5 +6,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public currentView: string;
+
+  public changeView(view) {
+    this.currentView = view;
+  }
 
 }

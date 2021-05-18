@@ -1,0 +1,7 @@
+<h3>Current user role is {{currentRole}}</h3>
+
+<div *ngFor="let userRole of userRoles" class="form-check-inline">
+  <label class="form-check-label">
+    <input [value]="userRole" [(ngModel)]="currentRole" type="radio" class="form-check-input">{{userRole}}
+  </label>
+</div>
